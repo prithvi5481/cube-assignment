@@ -3,13 +3,10 @@ import { ICustomerProps } from '../types/types';
 
 const CustomerPictures = ({selectedCustomer}:{selectedCustomer: ICustomerProps}) => {
     const [images, setImages] = useState([]);
-    let flag = true;
-
-    console.log(selectedCustomer)
 
     const fetchRandomImages = async () => {
         try {
-            const response = await fetch(`https://api.unsplash.com/photos/random?count=9&client_id=hTpgWghmpNvoyeDl4Cdhi2WV2s6YZrXHwtuAaLOHg2w`);
+            const response = await fetch(`https://api.unsplash.com/photos/random?count=9&client_id=${process.env.REACT_APP_ACCESS_TOKEN}`);
             const data = await response.json();
             setImages(data.map((img:any) => img.urls.regular));
             console.log(data)
@@ -18,13 +15,15 @@ const CustomerPictures = ({selectedCustomer}:{selectedCustomer: ICustomerProps})
         }
     };
 
-    setTimeout(() => {
-        flag = !flag;
-    },10000);
-
     useEffect(() => {
-        fetchRandomImages();
-    }, [selectedCustomer,flag]);
+        fetchRandomImages(); 
+
+        const intervalId = setInterval(() => {
+            fetchRandomImages();
+        }, 10000);
+
+        return () => clearInterval(intervalId);
+    }, [selectedCustomer]);
 
   return (
     <div className='px-32 py-16'>

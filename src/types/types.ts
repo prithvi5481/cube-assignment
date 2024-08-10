@@ -6,7 +6,7 @@ export interface ICustomerProps {
 
 export interface ICustomerSideBarProps {
     selectedCustomer: ICustomerProps;
-    setSelectedCustomer: any;
+    setSelectedCustomer: React.Dispatch<React.SetStateAction<ICustomerProps>>;
 }
 
 export interface ICustomerDetailsProps {
