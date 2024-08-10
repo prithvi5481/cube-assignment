@@ -9,7 +9,6 @@ const CustomerPictures = ({selectedCustomer}:{selectedCustomer: ICustomerProps})
             const response = await fetch(`https://api.unsplash.com/photos/random?count=9&client_id=${process.env.REACT_APP_ACCESS_TOKEN}`);
             const data = await response.json();
             setImages(data.map((img:any) => img.urls.regular));
-            console.log(data)
         } catch (error) {
             console.error("Error fetching images:", error);
         }

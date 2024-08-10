@@ -66,5 +66,35 @@ export const customerList :ICustomerProps[] = [
     customerInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est recusandae corporis hic ea iure exercitationem repellat, aliquam, molestias dignissimos inventore corrupti consequatur a nihil dolores ipsum repellendus quam cumque culpa. Dolores delectus, ut perferendis dicta reprehenderit dolorem aperiam ad est id, dolorum doloremque at ratione debitis totam atque optio aut facere illum, necessitatibus nam vitae aliquam! Dolore porro asperiores facilis molestiae. Repellat quidem vero adipisci cumque illum dignissimos ullam aut blanditiis similique quaerat, recusandae nisi velit sint, maxime labore corporis reprehenderit earum ea quae molestias odit sed laborum nesciunt! Perspiciatis, debitis illo. Mollitia in nesciunt sint modi cupiditate tenetur.",
       customerAddress: "123 Forest Knoll, San Francisco, CA 90001",
-    },
+  },
+  {
+    customerName: "Peter Parker",
+    customerInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est recusandae corporis hic ea iure exercitationem repellat, aliquam, molestias dignissimos inventore corrupti consequatur a nihil dolores ipsum repellendus quam cumque culpa. Dolores delectus, ut perferendis dicta reprehenderit dolorem aperiam ad est id, dolorum doloremque at ratione debitis totam atque optio aut facere illum, necessitatibus nam vitae aliquam! Dolore porro asperiores facilis molestiae. Repellat quidem vero adipisci cumque illum dignissimos ullam aut blanditiis similique quaerat, recusandae nisi velit sint, maxime labore corporis reprehenderit earum ea quae molestias odit sed laborum nesciunt! Perspiciatis, debitis illo. Mollitia in nesciunt sint modi cupiditate tenetur.",
+      customerAddress: "123 Forest Knoll, San Francisco, CA 90001", 
+  },
+  {
+    customerName: "Bruce Wayne",
+    customerInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est recusandae corporis hic ea iure exercitationem repellat, aliquam, molestias dignissimos inventore corrupti consequatur a nihil dolores ipsum repellendus quam cumque culpa. Dolores delectus, ut perferendis dicta reprehenderit dolorem aperiam ad est id, dolorum doloremque at ratione debitis totam atque optio aut facere illum, necessitatibus nam vitae aliquam! Dolore porro asperiores facilis molestiae. Repellat quidem vero adipisci cumque illum dignissimos ullam aut blanditiis similique quaerat, recusandae nisi velit sint, maxime labore corporis reprehenderit earum ea quae molestias odit sed laborum nesciunt! Perspiciatis, debitis illo. Mollitia in nesciunt sint modi cupiditate tenetur.",  
+      customerAddress: "123 Forest Knoll, San Francisco, CA 90001",
+  },
+  {
+    customerName: "Mark Zuckerberg",
+    customerInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est recusandae corporis hic ea iure exercitationem repellat, aliquam, molestias dignissimos inventore corrupti consequatur a nihil dolores ipsum repellendus quam cumque culpa. Dolores delectus, ut perferendis dicta reprehenderit dolorem aperiam ad est id, dolorum doloremque at ratione debitis totam atque optio aut facere illum, necessitatibus nam vitae aliquam! Dolore porro asperiores facilis molestiae. Repellat quidem vero adipisci cumque illum dignissimos ullam aut blanditiis similique quaerat, recusandae nisi velit sint, maxime labore corporis reprehenderit earum ea quae molestias odit sed laborum nesciunt! Perspiciatis, debitis illo. Mollitia in nesciunt sint modi cupiditate tenetur.",    
+      customerAddress: "54A Elm Street, Chicago, IL 60601",
+  },
+  {
+    customerName: "Megan Miller",
+    customerInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est recusandae corporis hic ea iure exercitationem repellat, aliquam, molestias dignissimos inventore corrupti consequatur a nihil dolores ipsum repellendus quam cumque culpa. Dolores delectus, ut perferendis dicta reprehenderit dolorem aperiam ad est id, dolorum doloremque at ratione debitis totam atque optio aut facere illum, necessitatibus nam vitae aliquam! Dolore porro asperiores facilis molestiae. Repellat quidem vero adipisci cumque illum dignissimos ullam aut blanditiis similique quaerat, recusandae nisi velit sint, maxime labore corporis reprehenderit earum ea quae molestias odit sed laborum nesciunt! Perspiciatis, debitis illo. Mollitia in nesciunt sint modi cupiditate tenetur.",  
+      customerAddress: "123 Forest Knoll, San Francisco, CA 90001",
+  },
+  {
+    customerName: "Henry Cavill",
+    customerInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est recusandae corporis hic ea iure exercitationem repellat, aliquam, molestias dignissimos inventore corrupti consequatur a nihil dolores ipsum repellendus quam cumque culpa. Dolores delectus, ut perferendis dicta reprehenderit dolorem aperiam ad est id, dolorum doloremque at ratione debitis totam atque optio aut facere illum, necessitatibus nam vitae aliquam! Dolore porro asperiores facilis molestiae. Repellat quidem vero adipisci cumque illum dignissimos ullam aut blanditiis similique quaerat, recusandae nisi velit sint, maxime labore corporis reprehenderit earum ea quae molestias odit sed laborum nesciunt! Perspiciatis, debitis illo. Mollitia in nesciunt sint modi cupiditate tenetur.",  
+      customerAddress: "Fifth Avenue, New York, NY 10001",
+  }
 ];
