@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cube-assignment/static/css/main.1b064c1b.css",
+    "main.js": "/cube-assignment/static/js/main.87526262.js",
+    "index.html": "/cube-assignment/index.html",
+    "main.1b064c1b.css.map": "/cube-assignment/static/css/main.1b064c1b.css.map",
+    "main.87526262.js.map": "/cube-assignment/static/js/main.87526262.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b064c1b.css",
+    "static/js/main.87526262.js"
+  ]
+}
