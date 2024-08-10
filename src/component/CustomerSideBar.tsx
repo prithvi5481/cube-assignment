@@ -1,18 +1,9 @@
 import React from 'react';
 import CustomerDetails from './CustomerDetails';
 import { customerList } from '../data/CustomerList';
+import { ICustomerProps, ICustomerSideBarProps } from '../types/types';
 
-interface Customer {
-    customerName: string;
-    customerInfo: string;
-}
-
-interface CustomerSideBarProps {
-    selectedCustomer: any;
-    setSelectedCustomer: any;
-}
-
-const CustomerSideBar = ({selectedCustomer, setSelectedCustomer}:CustomerSideBarProps) => {
+const CustomerSideBar = ({selectedCustomer, setSelectedCustomer}:ICustomerSideBarProps) => {
 
   return (
     <div>

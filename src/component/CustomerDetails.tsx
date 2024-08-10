@@ -1,15 +1,6 @@
 import React from 'react'
+import { ICustomerProps, ICustomerDetailsProps } from '../types/types';
 
-interface Customer {
-    customerName: string;
-    customerInfo: string;
-    customerAddress: string;
-}
-
-interface CustomerDetailsProps {
-    isSelected: boolean;
-    customer: Customer;
-}
 
 const TextLimitFunction = (text: string) => {
     if(text.length > 130){
@@ -18,7 +9,7 @@ const TextLimitFunction = (text: string) => {
     return text;
 }
 
-const CustomerDetails = ({customer, isSelected}:CustomerDetailsProps) => {
+const CustomerDetails = ({customer, isSelected}:ICustomerDetailsProps) => {
   return (
     <div className={`px-6 py-4 border-b border-gray-200 
         ${isSelected ? 'bg-gray-100 border-r-[3px] border-r-gray-400 text-gray-600' : 'bg-white'}`}

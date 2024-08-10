@@ -1,4 +1,6 @@
-export const customerList = [
+import { ICustomerProps } from '../types/types';
+
+export const customerList :ICustomerProps[] = [
   {
     customerName: "John Doe",
     customerInfo:

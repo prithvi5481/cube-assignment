@@ -1,11 +1,15 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect} from 'react';
+import { ICustomerProps } from '../types/types';
 
-const CustomerPictures = ({selectedCustomer}:any) => {
+const CustomerPictures = ({selectedCustomer}:{selectedCustomer: ICustomerProps}) => {
     const [images, setImages] = useState([]);
+    let flag = true;
+
+    console.log(selectedCustomer)
 
     const fetchRandomImages = async () => {
         try {
-            const response = await fetch(`https://api.unsplash.com/photos/random?count=9&client_id=${process.env.ACCESS_TOKEN}`);
+            const response = await fetch(`https://api.unsplash.com/photos/random?count=9&client_id=hTpgWghmpNvoyeDl4Cdhi2WV2s6YZrXHwtuAaLOHg2w`);
             const data = await response.json();
             setImages(data.map((img:any) => img.urls.regular));
             console.log(data)
@@ -14,15 +18,13 @@ const CustomerPictures = ({selectedCustomer}:any) => {
         }
     };
 
-    const timeOutFunction = () => {
-        setTimeout(() => {
-            fetchRandomImages();
-        }, 10000);
-    }
+    setTimeout(() => {
+        flag = !flag;
+    },10000);
 
     useEffect(() => {
         fetchRandomImages();
-    }, [selectedCustomer,timeOutFunction]);
+    }, [selectedCustomer,flag]);
 
   return (
     <div className='px-32 py-16'>

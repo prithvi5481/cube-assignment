@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import CustomerSideBar from './CustomerSideBar'
 import CustomerPictures from './CustomerPictures';
 import { customerList } from '../data/CustomerList';
+import { ICustomerProps } from '../types/types';
 
 const Customers = () => {
-    const [selectedCustomer, setSelectedCustomer] = useState(customerList[0]);
+    const [selectedCustomer, setSelectedCustomer] = useState<ICustomerProps>(customerList[0]);
   return (
     <div className='w-[100vw] h-[100vh] flex'>
         <div className='custom-scrollbar w-[25%] h-full overflow-auto bg-white border border-r-1 pl-4 border-gray-400 hover:cursor-pointer'>
